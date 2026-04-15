@@ -7,10 +7,10 @@ st.image(""C:\Users\VINAY\OneDrive\Pictures\133913383051540520.jpg"")
 # Get GROQ API Key
 client=Groq(api_key=st.secrets["Groq_API_KEY"])
 # Get Product Name and Audience for That Product
-product = st.text_input("product")
+product = st.text_input("Product")
 audience = st.text_input("Audience")
 # Button to Generate Content
-if st.button("Generate Content")
+if st.button("Generate Content"):
   prompt = f"Write marketing content for {product} targeting {audience}."
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
