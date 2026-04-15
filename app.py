@@ -1,9 +1,9 @@
 import streamlit as st
 from groq import Groq
 
-st.Set_page_config("PragyanAI Content Generator", layout="wide")
-st.title("PragyanAI_Content Generator")
-st.image(""C:\Users\VINAY\OneDrive\Pictures\133913383051540520.jpg"")
+st.set_page_config("PragyanAI Content Generator", layout="wide")
+st.title("PragyanAI-Content Generator")
+st.image("C:\Users\VINAY\OneDrive\Pictures\133913383051540520.jpg")
 # Get GROQ API Key
 client=Groq(api_key=st.secrets["Groq_API_KEY"])
 # Get Product Name and Audience for That Product
